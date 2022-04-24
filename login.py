@@ -13,11 +13,11 @@ def register():
     if userpassword == confirm_pass:
         user = User(username,userpassword)
         user.save_user
-        print(f"Welcome {username}!you are now registered")
-        print("Lets Login")
+        print(f"Welcome {username}!you are registered")
+        print("Login")
         
     else:
-       repeat= input("Something has gone wrong. Try again. y/n")
+       repeat= input("Oops,something has gone wrong. Try again. y/n")
        if repeat == "y":
            print(register())
        else:
@@ -26,7 +26,7 @@ def register():
  #    login   
 def Login():
      print("LOGIN")
-     print("-"*30)
+     print("-"*40)
      username = input("Enter username: ")
      userpassword = input("enter login password:  ")
      
@@ -37,7 +37,7 @@ def Login():
          user.login
          print(f"Welcome {username}!you are logged in")
          print("\n")
-         print("-"*30)
+         print("-"*40)
          print('What would you like to do?')
          while True:
             print("Use this short codes : ")
@@ -46,14 +46,14 @@ def Login():
             print("fc-find a specific credential")
             print("dd-delete credential")
             print("ex -exit" )
-            print("-"*50)
+            print("-"*60)
             user_input = input("answer: ")
             if user_input == "cc":
-                            choose= input("would you like a custom password or generated password?: c = custom and g = generated password: c/g?")
+                            choose= input("which type of password would you like, a custom password or generated password?: c = custom and g = generated password: c/g?")
                             if  choose == "c":
                                     
                                     print("*"*60)
-                                    print("Account name i.e Facebook")
+                                    print("Account name i.e Instagram")
                                     accountName= input()
                                     
                             
@@ -72,7 +72,7 @@ def Login():
                                     print("\n")
                             else:
                                 print("*"*60)
-                                print("Account name i.e Facebook")
+                                print("Account name i.e Instagram")
                                 accountName= input()
                                     
                             
@@ -98,7 +98,7 @@ def Login():
                     print('\n')
                 else:
                     print('\n')
-                    print("Sorry! You do not have any saved passwords")
+                    print("Oh no! You do not have any saved passwords")
                     print('\n')
                     
             elif user_input == "dd":
@@ -112,4 +112,4 @@ def Login():
                             print("Bye for now.......")
                             break
             else:
-                            print("I really didn't get that. Please use the short codes") 
+                            print("I don't understand. Please use the short codes") 
