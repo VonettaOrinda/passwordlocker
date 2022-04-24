@@ -11,3 +11,11 @@ class credential:
         self.password= password
         
     credential_list=[]
+    
+    def save_credentials(self):
+      """
+      Function to save users account credentials
+      """
+      
+      credential.credentials_list.append(self)
+      
