@@ -1,4 +1,6 @@
-
+from user import User
+from password import generate_Password
+import run
 
 
 
@@ -79,7 +81,7 @@ def Login():
                                 print("User Name")
                                 user_name= input()                  
                             
-                                user_password=generate_password()
+                                user_password= user_password()
                                 print("*"*60)
                                 run.save_credentials(run.create_credentials(accountName,user_name,user_password))
                                 print("\n")
