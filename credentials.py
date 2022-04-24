@@ -1,4 +1,7 @@
-class credential:
+from httplib2 import Credentials
+
+
+class Credential:
     """
     class that generates new instances of credentials.
     """
@@ -17,7 +20,7 @@ class credential:
       Function to save users account credentials
       """
        # self.new_credential.save_credential()
-      credential.credentials_list.append(self)
+      Credentials.credentials_list.append(self)
       
     def del_credentials(self):
         """
