@@ -1,6 +1,8 @@
 import string
 import random
 
+
+
 def generate_Password (stringLength=8) :
         
         """Generate a random password string of letters and digits and special characters"""
