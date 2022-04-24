@@ -17,3 +17,26 @@ The application requires the following installations
 
 ## Cloning
 
+open the terminal { ctrl + alt + T}
+git clone "https://github.com/VonettaOrinda/passwordlocker"
+cd Pasword-locker
+open your code editor 
+
+## Running the application
+To run the application, open the cloned file in your terminal and run the following commands
+
+$ chmod +x interface.py
+        $ ./interface.py
+
+  To run the test for application 
+  $python3 run.py   
+
+## Technologies used
+ python 3.6
+
+ ## Known bugs
+ There are no known bugs currently but pull requests are allowed incase you spot a bug
+
+## Contact information
+ Email me incase of anything thevonetteway@gmail.com
+
